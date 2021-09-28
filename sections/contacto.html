@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Natacha Danza/Contacto</title>
+        <link rel="stylesheet" href="../styles/styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="grilla">
+            <header class="topNav">
+                <div>
+                    <a href="../index.html"><img src="../images/logoNatacha.jpg" class="imgNavSize"></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="./staff.html">Staff</a>
+                        </li>
+                        <li>
+                            <a href="./horarios.html">Horarios</a>
+                        </li>
+                        <li >
+                            <a href="./galeria.html">Galería</a>
+                        </li>
+                        <li>
+                            <a class="active" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <div class="boxForm">
+                    <h4>Dejanos tus datos y nos contactaremos con vos</h4>
+                        <form>
+                            <label for="nombre">Nombre</label>
+                            <input type="tex" name="nombre" placeholder="nombre"/>
+                            <label for="apellido">Apellido</label>
+                            <input type="text" name="apellido" placeholder="apellido">
+                            <br/>
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" placeholder="indique su email">
+                            <br/>
+                            <label for="tel">Telefono</label>
+                            <input type="number" name="tel" placeholder="011-5555-5555">
+                            <div>
+                                <h3>Genero</h3>
+                                <label for="genero">Hombre</label>
+                                <input type="radio" name="genero" value="hombre">
+                                <label for="genero">Mujer</label>
+                                <input type="radio" name="genero" value="mujer">
+                            </div>
+                            
+                            <div>
+                                <h3>Posee conocimientos?</h3>
+                                <select name="conocimientosPrevios">
+                                    <option value="si">Si</option>
+                                    <option value="no">No</option>
+                                </select>
+                            </div>
+                            <br/>
+                            <label for="comentario">Porque queres empezar?</label>
+                            <br/>
+                            <textarea name="comentario"></textarea>
+                            <br/>
+                            <input type="submit" value="Enviar formulario"/>
+                            <input type="reset" value="Limpiar Formulario"/>
+                        </form>
+                </main>
+        </div>
+        
+    </body>
+</html>
