@@ -6,72 +6,123 @@
         <link rel="stylesheet" href="../css/bootstrap.css" />
         <meta name="vieport" content="width=device-width, initial-scale=1.0">
         <title>Natacha Danza/Galeria</title>
-        <link rel="stylesheet" href="../styles/styles.css" />
+        <link rel="stylesheet" href="../sassNode/estilos/main.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light py-0">
-            <div class="container-fluid topNav">
-                <a class="navbar-brand" href="../index.html">
-                    <img src="../images/logoNatacha.jpg" class="imgNavSize">
-                </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav align-items-center">
-                    <li class="nav-item mt-0 mx-3">
-                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item mt-0 mx-3">
-                        <a class="nav-link" href="./staff.html">Staff</a>
-                    </li>
-                    <li class="nav-item mt-0 mx-3">
-                        <a class="nav-link" href="./horarios.html">Horarios</a>
-                    </li>
-                    <li class="nav-item mt-0 mx-3">
-                        <a class="nav-link active" href="./galeria.html">Galería</a>
-                    </li>
-                    <li class="nav-item mt-0 mx-3">
-                        <a class="nav-link" href="./contacto.html">Contacto</a>
-                    </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        <div class="grilla">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light py-0">
+        <div class="container-fluid topNav">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../images/logoNatacha.jpg" class="topNav__imgNavSize">
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav align-items-center topNav__list">
+                <li class="nav-item mt-0 mx-3">
+                    <a class="nav-link topNav__item" aria-current="page" href="../index.html" id="colorItemTopNav">Home</a>
+                </li>
+                <li class="nav-item mt-0 mx-3 topNav__item ">
+                    <a class="nav-link topNav__item" href="./staff.html" id="colorItemTopNav">Staff</a>
+                </li>
+                <li class="nav-item mt-0 mx-3">
+                    <a class="nav-link topNav__item" href="./horarios.html" id="colorItemTopNav">Horarios</a>
+                </li>
+                <li class="nav-item mt-0 mx-3">
+                    <a class="nav-link topNav__item topNav__item--activo" href="./galeria.html" id="colorItemTopNav">Galería</a>
+                </li>
+                <li class="nav-item mt-0 mx-3">
+                    <a class="nav-link topNav__item" href="./contacto.html" id="colorItemTopNav">Contacto</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+        <div class="bodyGalery">
             <main>
+                <div class="row justify-content-center">
+                  <div class="col-md-6 mt-3">
+                    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                          <img src="../images/fotoGaleriaUno.JPG" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                          <img src="../images/fotoGaleriaDos.JPG" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="../images/fotoGaleriaTres.JPG" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="../images/fotoGaleriaTres.JPG" class="d-block w-100" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row text-center">
+                  <span class="bodyGalery__title">Algunas fotos</span>
+                </div>
+
+                <div class="row justify-content-center">
+                  <div class="col-lg-4 col-sm-6 m-3">
+                    <img src="../images/galery/img-1.JPEG" class="d-block w-100" alt="galery">
+                  </div>
+                  <div class="col-lg-4 col-sm-6 m-3">
+                    <img src="../images/galery/img-2.JPEG" class="d-block w-100" alt="galery">
+                  </div>
+                </div>
+
+                <div class="row justify-content-center">
+                  <div class="col-lg-4 col-sm-6 m-3">
+                    <img src="../images/galery/img-3.JPEG" class="d-block w-100" alt="galery">
+                  </div>
+                  <div class="col-lg-4 col-sm-6 m-3">
+                    <img src="../images/galery/img-4.JPG" class="d-block w-100" alt="galery">
+                  </div>
+                </div>
                 
                 <div class="row justify-content-center">
-                    <div class="col-md-6">
-                        <h2>Imagenes</h2>
-                        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                              <div class="carousel-item active" data-bs-interval="10000">
-                                <img src="../images/fotoGaleriaUno.JPG" class="d-block w-100" alt="...">
-                              </div>
-                              <div class="carousel-item" data-bs-interval="2000">
-                                <img src="../images/fotoGaleriaDos.JPG" class="d-block w-100" alt="...">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="../images/fotoGaleriaTres.JPG" class="d-block w-100" alt="...">
-                              </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Next</span>
-                            </button>
-                          </div>
-                    </div>
+                  <div class="col-lg-4 col-sm-6 m-3">
+                    <img src="../images/galery/img-5.JPG" class="d-block w-100" alt="galery">
+                  </div>
+                  <div class="col-lg-4 col-sm-6 m-3">
+                    <img src="../images/galery/img-6.JPG" class="d-block w-100" alt="galery">
+                  </div>
                 </div>
-            </main>
+              </main>
         </div>
+        <div class="footer d-flex justify-content-between">
+          <div class="mx-3">
+              <i class="bi bi-envelope-fill footer__icons"></i>
+              <span class="px-2" id="colorItemTopNav">natachaDanza@xxxx.com.ar</span>
+              
+          </div>
+          <div class="mx-3">
+              <i class="bi bi-telephone-fill footer__icons"></i>
+              <span class="px-2" id="colorItemTopNav">11-1114-1111</span> 
+          </div>
+          
+      </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     </body>
 </html>

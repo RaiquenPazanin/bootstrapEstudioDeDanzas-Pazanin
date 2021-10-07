@@ -1,0 +1,344 @@
+/*BARRA DE NAVEGACION*/
+.topNav {
+  background: #8a0f87;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(161, 102, 160, 0.735)), color-stop(36%, rgba(218, 16, 210, 0.255637)), color-stop(75%, #fc00ff));
+  background: linear-gradient(90deg, rgba(161, 102, 160, 0.735) 0%, rgba(218, 16, 210, 0.255637) 36%, #fc00ff 75%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8a0f87",endColorstr="#fc00ff",GradientType=1);
+}
+
+.topNav__imgNavSize {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 10%;
+}
+
+.topNav__item {
+  color: white;
+}
+
+.topNav__item--activo {
+  color: black;
+  font-weight: bolder;
+  background-color: violet;
+}
+
+#colorItemTopNav {
+  color: white;
+}
+
+/*MEDIA QUERY*/
+@media only screen and (max-width: 480px) {
+  .topNav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .topNav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/* CUERPO PRINCIPAL Home*/
+#grilla {
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  -ms-grid-rows: 0.3fr auto;
+      grid-template-rows: 0.3fr auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bodyHome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url("../../images/fondoBodyPpal.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bodyHome__title {
+  font-weight: bolder;
+  font-size: 4rem;
+  -webkit-animation-name: animationTitleHome;
+          animation-name: animationTitleHome;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.bodyHome__anuncios {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 3.125rem;
+  color: black;
+  list-style: none;
+}
+
+.bodyHome__subTitle {
+  font-size: 3.125rem;
+  font-weight: bold;
+  color: black;
+}
+
+.bodyHome__imgLink {
+  width: 4rem;
+  height: 4rem;
+  opacity: 0.6;
+}
+
+.bodyHome__iconsLink {
+  font-size: 4rem;
+  color: white;
+}
+
+.bodyHome__iconsLink:hover {
+  color: violet;
+}
+
+.bodyHome__linkBodyPpal {
+  color: white;
+  -webkit-text-decoration-line: unset;
+          text-decoration-line: unset;
+  font-size: 2.5rem;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: bold;
+}
+
+.bodyHome__linkBodyPpal:hover {
+  color: violet;
+}
+
+/*KEFRAMES*/
+@-webkit-keyframes animationTitleHome {
+  0% {
+    color: purple;
+    font-weight: bold;
+  }
+  50% {
+    color: violet;
+    font-weight: bolder;
+  }
+  100% {
+    color: purple;
+    font-weight: bold;
+  }
+}
+@keyframes animationTitleHome {
+  0% {
+    color: purple;
+    font-weight: bold;
+  }
+  50% {
+    color: violet;
+    font-weight: bolder;
+  }
+  100% {
+    color: purple;
+    font-weight: bold;
+  }
+}
+
+/************************************************************************************************/
+/* SECCION STAFF */
+.bodyStaff {
+  background-image: url("../../../images/logoNatachaOpacity.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bodyStaff__title {
+  color: purple;
+  font-weight: bold;
+  font-size: 3rem;
+  font-family: 'Urbanist', sans-serif;
+  text-align: center;
+  -webkit-animation: imagenStaff 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: imagenStaff 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.bodyStaff__subTitle {
+  text-align: center;
+}
+
+@-webkit-keyframes imagenStaff {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.descriptionStaff {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+.descriptionStaff__imgPerf {
+  border-radius: 100%;
+  width: 32.5rem;
+  height: 32.5rem;
+  -webkit-animation: scale-up-center 1s ease-out 1s both;
+  animation: scale-up-center 1s ease-out 1s both;
+}
+
+.descriptionStaff__textPhar {
+  font-size: 1.125rem;
+  font-family: 'Urbanist', sans-serif;
+  text-align: justify;
+}
+
+.footer {
+  background: #8a0f87;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(161, 102, 160, 0.735)), color-stop(36%, rgba(218, 16, 210, 0.255637)), color-stop(75%, #fc00ff));
+  background: linear-gradient(90deg, rgba(161, 102, 160, 0.735) 0%, rgba(218, 16, 210, 0.255637) 36%, #fc00ff 75%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8a0f87",endColorstr="#fc00ff",GradientType=1);
+}
+
+.footer__icons {
+  font-size: 1rem;
+  color: white;
+}
+
+.boxContacto {
+  background-image: url("../../../images/logoNatachaOpacity.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: -ms-grid;
+  display: grid;
+  margin-top: 1rem;
+  padding-bottom: 15rem;
+}
+
+.boxContacto__title {
+  color: violet;
+  font-size: 2rem;
+}
+
+.formContacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  color: purple;
+  border-color: purple;
+  border-width: 0.25rem;
+}
+
+.formContacto__title {
+  font: bolder;
+  font-size: 5rem;
+}
+
+.boxHorarios {
+  background-image: url("../../../images/logoNatachaOpacity.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 1rem;
+  display: -ms-grid;
+  display: grid;
+  margin-top: 1rem;
+  padding-top: 15rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 15rem;
+}
+
+.tableHorarios {
+  border-color: purple;
+}
+
+.tableHorarios__title {
+  font-size: 3.125rem;
+  font-weight: bold;
+  color: purple;
+}
+
+.bodyGalery {
+  background-image: url("../../../images/logoNatachaOpacity.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: -ms-grid;
+  display: grid;
+}
+
+.bodyGalery__title {
+  color: purple;
+  font-size: 5rem;
+  font-weight: bolder;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=main.css.map */

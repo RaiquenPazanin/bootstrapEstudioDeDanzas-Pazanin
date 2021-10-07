@@ -1,0 +1,22 @@
+{
+  "name": "bootstrapestudiodedanzas-pazanin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raiquenbvq8/bootstrapEstudioDeDanzas-Pazanin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raiquenbvq8/bootstrapEstudioDeDanzas-Pazanin/issues"
+  },
+  "homepage": "https://github.com/raiquenbvq8/bootstrapEstudioDeDanzas-Pazanin#readme",
+  "dependencies": {
+    "bootstrap-icons": "^1.5.0"
+  }
+}

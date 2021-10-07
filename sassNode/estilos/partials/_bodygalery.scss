@@ -1,0 +1,12 @@
+.bodyGalery{
+    background-image: url("../../../images/logoNatachaOpacity.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: grid;
+
+    &__title{
+        color: purple;
+        font-size: 5rem;
+        font-weight: bolder;
+    }
+}

@@ -1,0 +1,21 @@
+.boxHorarios{
+    background-image: url("../../../images/logoNatachaOpacity.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 1rem;
+    display: grid;
+    margin-top: 1rem;
+    padding-top: 15rem;
+    justify-content: center;
+    padding-bottom: 15rem;
+}
+
+.tableHorarios{
+    border-color: purple;
+    
+    &__title{
+        font-size: 3.125rem;
+        font-weight: bold;
+        color: purple;
+    }
+}

@@ -6,81 +6,113 @@
         <link rel="stylesheet" href="../css/bootstrap.css" />
         <meta name="vieport" content="width=device-width, initial-scale=1.0">
         <title>Natacha Danza/Contacto</title>
-        <link rel="stylesheet" href="../styles/styles.css" />
+        <link rel="stylesheet" href="../sassNode/estilos/main.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light py-0">
             <div class="container-fluid topNav">
                 <a class="navbar-brand" href="../index.html">
-                    <img src="../images/logoNatacha.jpg" class="imgNavSize">
+                    <img src="../images/logoNatacha.jpg" class="topNav__imgNavSize">
                 </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav align-items-center">
+                <ul class="navbar-nav align-items-center topNav__list">
                     <li class="nav-item mt-0 mx-3">
-                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                        <a class="nav-link topNav__item" aria-current="page" href="../index.html" id="colorItemTopNav">Home</a>
+                    </li>
+                    <li class="nav-item mt-0 mx-3 topNav__item ">
+                        <a class="nav-link topNav__item" href="./staff.html" id="colorItemTopNav">Staff</a>
                     </li>
                     <li class="nav-item mt-0 mx-3">
-                        <a class="nav-link" href="./staff.html">Staff</a>
+                        <a class="nav-link topNav__item" href="./horarios.html" id="colorItemTopNav">Horarios</a>
                     </li>
                     <li class="nav-item mt-0 mx-3">
-                        <a class="nav-link" href="./horarios.html">Horarios</a>
+                        <a class="nav-link topNav__item" href="./galeria.html" id="colorItemTopNav">Galería</a>
                     </li>
                     <li class="nav-item mt-0 mx-3">
-                        <a class="nav-link" href="./galeria.html">Galería</a>
-                    </li>
-                    <li class="nav-item mt-0 mx-3">
-                        <a class="nav-link active" href="./contacto.html">Contacto</a>
+                        <a class="nav-link topNav__item topNav__item--activo" href="./contacto.html" id="colorItemTopNav">Contacto</a>
                     </li>
                 </ul>
               </div>
             </div>
           </nav>
-        <div class="grilla">
+        <div class="boxContacto">
             <main>
-                <div class="boxForm">
+                <div class="row text-center boxContacto__title">
                     <h4>Dejanos tus datos y nos contactaremos con vos</h4>
-                        <form>
-                            <label for="nombre">Nombre</label>
-                            <input type="tex" name="nombre" placeholder="nombre"/>
-                            <label for="apellido">Apellido</label>
-                            <input type="text" name="apellido" placeholder="apellido">
-                            <br/>
-                            <label for="email">E-mail</label>
-                            <input type="email" name="email" placeholder="indique su email">
-                            <br/>
-                            <label for="tel">Telefono</label>
-                            <input type="number" name="tel" placeholder="011-5555-5555">
-                            <div>
-                                <h3>Genero</h3>
+                </div>
+                
+                <div class="row vh-100 juntify-content-center align-items-center">
+                    <div class="col">
+                        <form class="row g-3">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label for="inputFirstName" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="inputFirstName">
+                                  </div>
+                                  <div class="col-md-3">
+                                    <label for="inputLastName" class="form-label">Apellido</label>
+                                    <input type="text" class="form-control" id="inputLastName">
+                                  </div>
+                            </div>
+                            
+                            <div class="col-md-3">
+                              <label for="inputEmail" class="form-label">E-Mail</label>
+                              <input type="email" class="form-control" id="inputAEmail">
+                            </div>
+                            <div class="col-md-3">
+                              <label for="inputTelephone" class="form-label">Telefono</label>
+                              <input type="number" class="form-control" id="inputTelephone">
+                            </div>
+                
+                            <div class="row">
+                                <div class="formContacto_title">
+                                    <h3>Genero</h3>
+                                </div>
+                                
                                 <label for="genero">Hombre</label>
                                 <input type="radio" name="genero" value="hombre">
                                 <label for="genero">Mujer</label>
                                 <input type="radio" name="genero" value="mujer">
                             </div>
-                            
-                            <div>
-                                <h3>Posee conocimientos?</h3>
-                                <select name="conocimientosPrevios">
-                                    <option value="si">Si</option>
-                                    <option value="no">No</option>
-                                </select>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="customRange2" class="form-label">¿Cual es tu grado de conocimientos?</label>
+                                    <input type="range" class="form-range" min="0" max="5" id="customRange2">
+                                </div>
                             </div>
-                            <br/>
-                            <label for="comentario">Porque queres empezar?</label>
-                            <br/>
-                            <textarea name="comentario"></textarea>
-                            <br/>
-                            <input type="submit" value="Enviar formulario"/>
-                            <input type="reset" value="Limpiar Formulario"/>
+                            <div class="row">
+                                <div class="form-floating col-md-6">
+                                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                                    <label for="floatingTextarea2">Contanos porque te interesaria empezar</label>
+                                </div>
+                            </div>
                         </form>
-                </main>
+                    </div>
+                    
+                </div>
+                
+            </main>
+            <div class="row">
+                <div class="footer d-flex justify-content-between">
+                    <div class="mx-3">
+                        <i class="bi bi-envelope-fill footer__icons"></i>
+                        <span class="px-2" id="colorItemTopNav">natachaDanza@xxxx.com.ar</span>
+                    </div>
+                    <div class="mx-3">
+                        <i class="bi bi-telephone-fill footer__icons"></i>
+                        <span class="px-2" id="colorItemTopNav">11-1114-1111</span> 
+                    </div>
+                </div>
+                
+            </div>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     </body>
 </html>

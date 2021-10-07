@@ -1,0 +1,25 @@
+.boxContacto{
+    background-image: url("../../../images/logoNatachaOpacity.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: grid;
+    margin-top: 1rem;
+    padding-bottom: 15rem;
+    &__title{
+        color: violet;
+        font-size: 2rem;
+    }
+}
+
+.formContacto{
+    display: flex;
+    text-align: center;
+    color: purple;
+    border-color: purple;
+    border-width: 0.25rem;
+
+    &__title{
+        font: bolder;
+        font-size: 5rem;
+    }
+}

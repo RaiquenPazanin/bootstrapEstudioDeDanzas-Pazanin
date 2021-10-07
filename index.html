@@ -7,52 +7,54 @@
         <link rel="stylesheet" href="./css/bootstrap-grid.css" />
         <link rel="stylesheet" href="./css/bootstrap.css" />
         <title>Natacha Danza</title>
-        <link rel="stylesheet" href="./styles/styles.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./sassNode/estilos/main.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        
         
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light py-0">
             <div class="container-fluid topNav">
                 <a class="navbar-brand" href="./index.html">
-                    <img src="./images/logoNatacha.jpg" class="imgNavSize">
+                    <img src="./images/logoNatacha.jpg" class="topNav__imgNavSize">
                 </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav align-items-center">
+                <ul class="navbar-nav align-items-center topNav__list">
                     <li class="nav-item mt-0 mx-3">
-                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        <a class="nav-link topNav__item topNav__item--activo" id="colorItemTopNav" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item mt-0 mx-3 topNav__item ">
+                        <a class="nav-link" href="./sections/staff.html" id="colorItemTopNav">Staff</a>
                     </li>
                     <li class="nav-item mt-0 mx-3">
-                        <a class="nav-link" href="./sections/staff.html">Staff</a>
+                        <a class="nav-link topNav__item" href="./sections/horarios.html" id="colorItemTopNav">Horarios</a>
                     </li>
                     <li class="nav-item mt-0 mx-3">
-                        <a class="nav-link" href="./sections/horarios.html">Horarios</a>
+                        <a class="nav-link topNav__item" href="./sections/galeria.html" id="colorItemTopNav">Galeria</a>
                     </li>
                     <li class="nav-item mt-0 mx-3">
-                        <a class="nav-link" href="./sections/galeria.html">Galería</a>
-                    </li>
-                    <li class="nav-item mt-0 mx-3">
-                        <a class="nav-link" href="./sections/contacto.html">Contacto</a>
+                        <a class="nav-link topNav__item" href="./sections/contacto.html" id="colorItemTopNav">Contacto</a>
                     </li>
                 </ul>
               </div>
             </div>
           </nav>
         <div>
-            <main class="boxPpalHome">
+            <main class="bodyHome">
                 <div class="container-fluid">
                     <div class="row text-center">
-                        <h1 class="titleHome">Natacha Danza</h1>
+                        <h1 class="bodyHome__title">Natacha Danza</h1>
                     </div>
                     <div class="row text-center">
-                        <p class="subTitleHome">Podras disfrutas nuestras hermosas clases de:</p>
+                        <p class="bodyHome__subTitle">Podras disfrutas nuestras hermosas clases de:</p>
                     </div>
-                    <div class="row anunciosHome text-center">
+                    <div class="row bodyHome__anuncios text-center">
                         <ul>
                             <li>Clásico</li>
                             <li>Contemporáneo</li>
@@ -64,24 +66,36 @@
                     <div class="row">
                         <div class="offset-md-4 col-md-2 offset-md-1 text-center">
                             <a href="https://www.facebook.com/natacha.danz.18/" target="_blank">
-                                <img src="./images/logoFacebook2.png" class="imgLink img-fluid">
+                                <i class="bi bi-facebook bodyHome__iconsLink"></i>
                             </a>
                         </div>
                         <div class="col-md-2 text-center">
                             <a href="https://www.instagram.com/natachadanza/?hl=es-la" target="_blank">
-                                <img src="./images/logoInstagram2.png" class="imgLink img-fluid">
+                                <i class="bi bi-instagram bodyHome__iconsLink"></i>
                             </a>
                         </div>
                         
                     </div>
                     <div class="row text-center">
-                        <a href="./sections/contacto.html" class="linkBodyPpal">
+                        <a href="./sections/contacto.html" class="bodyHome__linkBodyPpal">
                                 <span>Contactenos</span>
                         </a>
                     </div>
                 </div>
                 
             </main>
+        </div>
+        <div class="footer d-flex justify-content-between">
+            <div class="mx-3">
+                <i class="bi bi-envelope-fill footer__icons"></i>
+                <span class="px-2" id="colorItemTopNav">natachaDanza@xxxx.com.ar</span>
+                
+            </div>
+            <div class="mx-3">
+                <i class="bi bi-telephone-fill footer__icons"></i>
+                <span class="px-2" id="colorItemTopNav">11-1114-1111</span> 
+            </div>
+            
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
         
