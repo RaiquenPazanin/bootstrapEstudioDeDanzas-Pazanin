@@ -5,7 +5,9 @@
         <link rel="stylesheet" href="../css/bootstrap-grid.css" />
         <link rel="stylesheet" href="../css/bootstrap.css" />
         <meta name="vieport" content="width=device-width, initial-scale=1.0">
-        <title>Natacha Danza/Contacto</title>
+        <meta name="keywords" content="DANZA, CONTACTO">
+        <title>Contacto</title>
+        <meta name="description" content="Dejamos tu correo o telefono y nos comunicaremos con vos para orientarte en nuestro hermoso mundo de danzar">
         <link rel="stylesheet" href="../sassNode/estilos/main.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,8 +49,8 @@
                 <div class="row text-center boxContacto__title">
                     <h4>Dejanos tus datos y nos contactaremos con vos</h4>
                 </div>
-                
-                <div class="row vh-100 juntify-content-center align-items-center">
+
+                <div class="container">
                     <div class="col">
                         <form class="row g-3">
                             <div class="row">
@@ -75,12 +77,18 @@
                                 <div class="formContacto_title">
                                     <h3>Genero</h3>
                                 </div>
-                                
+                            </div>
+                            <div class="row">
                                 <label for="genero">Hombre</label>
                                 <input type="radio" name="genero" value="hombre">
                                 <label for="genero">Mujer</label>
                                 <input type="radio" name="genero" value="mujer">
+                                <label for="genero">Otro</label>
+                                <input type="radio" name="genero" value="otro">
                             </div>
+                                
+                                
+                            
                             <div class="row">
                                 <div class="col-md-4">
                                     <label for="customRange2" class="form-label">¿Cual es tu grado de conocimientos?</label>
@@ -95,24 +103,25 @@
                             </div>
                         </form>
                     </div>
-                    
                 </div>
                 
             </main>
-            <div class="row">
+        </div>
+            
                 <div class="footer d-flex justify-content-between">
                     <div class="mx-3">
                         <i class="bi bi-envelope-fill footer__icons"></i>
-                        <span class="px-2" id="colorItemTopNav">natachaDanza@xxxx.com.ar</span>
+                        <span class="px-2 footer__icons" id="colorItemTopNav">natachaDanza@xxxx.com.ar</span>
+                        
                     </div>
                     <div class="mx-3">
                         <i class="bi bi-telephone-fill footer__icons"></i>
-                        <span class="px-2" id="colorItemTopNav">11-1114-1111</span> 
+                        <span class="px-2 footer__icons" id="colorItemTopNav">11-1114-1111</span> 
                     </div>
                 </div>
                 
-            </div>
-        </div>
+            
+        
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     </body>
 </html>

@@ -1,0 +1,43 @@
+INDEX:
+Se le agrego:
+ <meta name="keywords" content="DANZA, CALSICA, CONTEMPORANEO, JAZZ, JARDIN DE DANZAS, CLASES">
+
+<meta name="description" content="Natacha Danza comenzo hace mas de 20 años, siendo nuestro principal objetivo la perfeccion de la tecnica y perfeccionismo en el arte de las danzas">
+Ya tenia puesto:
+<title> Natacha danza</title> 
+
+Como asi también los h1 correspondientes
+
+GALERIA:
+Se le agrego:
+<meta name="keywords" content="DANZA, FOTOS, MUESTRA ANUAL">
+<meta name="description" content="Te mostramos algunas fotos de nuestras muestras y clases. Animate!!!">
+Se le modifico:
+        <title>Galeria</title>
+Como asi también los h1 correspondientes
+STAFF:
+Se le agrego:
+<meta name="keywords" content="DANZA, STAFF, NATACHA PAZANIN">
+        
+<meta name="description" content="Natacha Pazanin. Maestra nacional de Danzas, Licenciada en Psicologia, entrenadora de alto rendimiento nacional">
+Se le modifico:
+<title>Staff</title>
+Como asi también los h1 correspondientes
+
+
+HORARIOS:
+Se le agrego:
+<meta name="keywords" content="DANZA, HORARIOS, NUESTRAS CLASES">
+<meta name="description" content="Tendras varios horarios ya que contamos con dos salones para que puedas disfrutar de nuestras hermosas clases">
+Se le modifico:
+<title>Horarios</title>
+
+CONTACTO:
+Se le agrego:
+<meta name="keywords" content="DANZA, CONTACTO">
+<meta name="description" content="Dejamos tu correo o telefono y nos comunicaremos con vos para orientarte en nuestro hermoso mundo de danzar">
+
+Se le modifico
+<title>Contacto</title>
+
+Se creo la página: 404

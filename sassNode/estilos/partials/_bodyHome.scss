@@ -1,5 +1,6 @@
 /* CUERPO PRINCIPAL Home*/
 $colorHover: violet;
+@import "./mediaQueri";
 
 #grilla {
     display: grid;
@@ -25,19 +26,28 @@ $colorHover: violet;
         animation-duration: 2s;
         animation-iteration-count: infinite;
         animation-delay: 0s;
-      }
 
+        @include movil{
+          font-size: 2rem;
+        }
+      }
     &__anuncios{
         flex-wrap: wrap;
         font-size: 3.125rem;
         color: black;
         list-style: none;
+        @include movil{
+          font-size: 1.5rem;
+        }
       }
 
     &__subTitle{
         font-size: 3.125rem;
         font-weight: bold;
         color: black;
+        @include movil{
+          font-size: 1.5rem;
+        }
       }
     
     &__imgLink{
@@ -51,6 +61,9 @@ $colorHover: violet;
       &:hover{
         color: $colorHover;
       }
+      @include movil{
+        font-size: 2rem;
+      }
     }
 
     &__linkBodyPpal{
@@ -61,6 +74,9 @@ $colorHover: violet;
       font-weight: bold;
       &:hover{
         color: $colorHover;
+      }
+      @include movil{
+        font-size: 1.5rem;
       }
   }
 }
