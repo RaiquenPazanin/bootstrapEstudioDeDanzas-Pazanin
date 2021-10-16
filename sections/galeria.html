@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="../css/bootstrap-grid.css" />
-        <link rel="stylesheet" href="../css/bootstrap.css" />
-        <meta name="vieport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content="DANZA, FOTOS, MUESTRA ANUAL">
-        <title>Galeria</title>
-        <meta name="description" content="Te mostramos algunas fotos de nuestras muestras y clases. Animate!!!">
-        <link rel="stylesheet" href="../sassNode/estilos/main.css"/>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="../css/bootstrap-grid.css" />
+      <link rel="stylesheet" href="../css/bootstrap.css" />
+      <meta name="vieport" content="width=device-width, initial-scale=1.0">
+      <meta name="keywords" content="DANZA, FOTOS, MUESTRA ANUAL">
+      <title>Galeria</title>
+      <meta name="description" content="Te mostramos algunas fotos de nuestras muestras y clases. Animate!!!">
+      <link rel="stylesheet" href="../sassNode/estilos/main.css"/>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+      <link rel="stylesheet" href="../node_modules/photoswipe/dist/photoswipe.css"> 
+      <link rel="stylesheet" href="../node_modules/photoswipe/dist/default-skin/default-skin.css"> 
+      <script src="../js/galery/photoswipe.min.js"></script> 
+      <script src="../js/galery/photoswipe-ui-default.min.js"></script>
     </head>
     <body>
       <nav class="navbar navbar-expand-lg navbar-light bg-light py-0">
@@ -44,86 +48,104 @@
           </div>
         </div>
       </nav>
-        <div class="bodyGalery">
-            <main>
-                <div class="row justify-content-center">
-                  <div class="col-md-6 mt-3">
-                    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                      <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <div class="bodyGalery">
+        <main>
+          <div class="row text-center">
+            <span class="bodyGalery__title">Algunas fotos</span>
+          </div>
+          <div class="row text-center" itemscope itemtype="http://schema.org/ImageGallery">
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col-lg-3 col-sm-6 m-3 p-1">
+              <a href="../images/galery/img-1.JPG" itemprop="contentUrl" data-size="1024x1024">
+                  <img src="../images/galery/img-1.JPG" itemprop="thumbnail" alt="Image description" />
+              </a>
+              <figcaption itemprop="caption description">Image caption  1</figcaption>
+            </figure>
+        
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col-lg-3 col-sm-6 m-3 p-1">
+              <a href="../images/galery/img-2.JPG" itemprop="contentUrl" data-size="964x1024">
+                  <img src="../images/galery/img-2.JPG" itemprop="thumbnail" alt="Image description" />
+              </a>
+              <figcaption itemprop="caption description">Image caption 2</figcaption>
+            </figure>
+        
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"  class="col-lg-3 col-sm-6 m-3">
+              <a href="../images/galery/img-3.JPG" itemprop="contentUrl" data-size="1024x683">
+                  <img src="../images/galery/img-3.JPG" itemprop="thumbnail" alt="Image description" />
+              </a>
+              <figcaption itemprop="caption description">Image caption 3</figcaption>
+            </figure>
+        
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col-lg-3 col-sm-6 m-3">
+              <a href="../images/galery/img-4.JPG" itemprop="contentUrl" data-size="1024x768">
+                  <img src="../images/galery/img-4.JPG"  itemprop="thumbnail" alt="Image description" />
+              </a>
+              <figcaption itemprop="caption description">Image caption 4</figcaption>
+            </figure>
+          </div>
+
+        <!-- Root element of PhotoSwipe. Must have class pswp. -->
+          <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+        
+              <!-- Background of PhotoSwipe. 
+                  It's a separate element, as animating opacity is faster than rgba(). -->
+              <div class="pswp__bg"></div>
+        
+              <!-- Slides wrapper with overflow:hidden. -->
+              <div class="pswp__scroll-wrap">
+        
+                  <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+                  <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+                  <div class="pswp__container">
+                      <div class="pswp__item"></div>
+                      <div class="pswp__item"></div>
+                      <div class="pswp__item"></div>
+                  </div>
+        
+                  <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+                  <div class="pswp__ui pswp__ui--hidden">
+                    <div class="pswp__top-bar">
+                      <!--  Controls are self-explanatory. Order can be changed. -->
+                      <div class="pswp__counter"></div>
+                      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                      <button class="pswp__button pswp__button--share" title="Share"></button>
+                      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                      <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                      <!-- element will get class pswp__preloader--active when preloader is running -->
+                      <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                          <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                          </div>
+                        </div>
                       </div>
-                      <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="10000">
-                          <img src="../images/fotoGaleriaUno.JPG" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item" data-bs-interval="2000">
-                          <img src="../images/fotoGaleriaDos.JPG" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                          <img src="../images/fotoGaleriaTres.JPG" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                          <img src="../images/fotoGaleriaTres.JPG" class="d-block w-100" alt="...">
-                        </div>
-                      </div>
-                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                      </button>
-                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                      </button>
                     </div>
-                  </div>
+                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                      <div class="pswp__share-tooltip"></div>
+                    </div>
+                    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+                    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                    <div class="pswp__caption">
+                      <div class="pswp__caption__center"></div>
+                    </div>
+        
+                  </div>        
                 </div>
-
-                <div class="row text-center">
-                  <span class="bodyGalery__title">Algunas fotos</span>
-                </div>
-
-                <div class="row justify-content-center">
-                  <div class="col-lg-4 col-sm-6 m-3">
-                    <img src="../images/galery/img-1.JPG" class="d-block w-100" alt="galery">
-                  </div>
-                  <div class="col-lg-4 col-sm-6 m-3">
-                    <img src="../images/galery/img-2.JPG" class="d-block w-100" alt="galery">
-                  </div>
-                </div>
-
-                <div class="row justify-content-center">
-                  <div class="col-lg-4 col-sm-6 m-3">
-                    <img src="../images/galery/img-3.JPG" class="d-block w-100" alt="galery">
-                  </div>
-                  <div class="col-lg-4 col-sm-6 m-3">
-                    <img src="../images/galery/img-4.JPG" class="d-block w-100" alt="galery">
-                  </div>
-                </div>
-                
-                <div class="row justify-content-center">
-                  <div class="col-lg-4 col-sm-6 m-3">
-                    <img src="../images/galery/img-5.JPG" class="d-block w-100" alt="galery">
-                  </div>
-                  <div class="col-lg-4 col-sm-6 m-3">
-                    <img src="../images/galery/img-6.JPG" class="d-block w-100" alt="galery">
-                  </div>
-                </div>
-              </main>
-        </div>
-        <div class="footer d-flex justify-content-between">
-          <div class="mx-3">
-              <i class="bi bi-envelope-fill footer__icons"></i>
-              <span class="px-2 footer__icons" id="colorItemTopNav">natachaDanza@xxxx.com.ar</span>
-              
-          </div>
-          <div class="mx-3">
-              <i class="bi bi-telephone-fill footer__icons"></i>
-              <span class="px-2 footer__icons" id="colorItemTopNav">11-1114-1111</span> 
-          </div>
+              </div>
+        </main>
       </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+      <div class="footer d-flex justify-content-between">
+        <div class="mx-3">
+            <i class="bi bi-envelope-fill footer__icons"></i>
+            <span class="px-2 footer__icons" id="colorItemTopNav">natachaDanza@xxxx.com.ar</span>
+            
+        </div>
+        <div class="mx-3">
+            <i class="bi bi-telephone-fill footer__icons"></i>
+            <span class="px-2 footer__icons" id="colorItemTopNav">11-1114-1111</span> 
+        </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="../js/galery/galery.js"></script>
     </body>
 </html>
